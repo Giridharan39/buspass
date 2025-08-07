@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMATS Transport</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="icon" type="image/png" href="images/logo-all.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img src="images/logo.png" alt="logo">
+        <h1>SIMATS TRANSPORTS</h1>
+    </div>
+    <div class="container">
+        <div class="green-box">
+            <h2 id="datetime">7-AUG-2025 14:19:47</h2>
+            <h1>VALID</h1>
+        </div>
+        <img src="images/profile-img.jpg" alt="profile-img" class="profile-img">
+        <img src="images/regno.png" alt="qrcode" class="qrcode">
+        <h3>GIRIDHARAN G</h3>
+        <h4>192211982</h4>
+    </div>
+    <div class="second-green-box">
+        <h1>PURASAIVAKKAM 4</h1>
+    </div>
+    <footer>
+        <ul>
+            <li>
+                <a href="#"><img src="images/profile-info.png" alt="profile-img"></a>
+            </li>
+            <li>
+                <a class="home-logo" href="#"><img src="images/home-logo.png" alt="home logo"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/notification-bell.png" alt="notification"></a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+
+            const day = now.getDate(); // no padding
+            const monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN",
+                                "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+            const month = monthNames[now.getMonth()];
+            const year = now.getFullYear();
+
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+
+            const formatted = `${day}-${month}-${year} ${hours}:${minutes}:${seconds}`;
+            document.getElementById('datetime').textContent = formatted;
+        }
+
+        setInterval(updateDateTime, 1000);
+        updateDateTime(); // show immediately
+    </script>
+</body>
+</html>

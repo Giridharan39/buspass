@@ -1,0 +1,125 @@
+/*.markazi-text-<uniquifier> {
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    max-width: 100vh;
+    
+}
+.head{
+    background-color: #0164E7BF;
+    width: 100%;
+}
+.head h1{
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 28px;
+    font-family: "Markazi Text", serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    padding: 20px;
+    width: 83%;
+    box-shadow: 1px 1px 6px #ccc;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 8px 0px 16px;
+}
+.container h1{
+    font-family: 'roboto', sans-serif;
+    font-size: 22px;
+    color: #0164E7BF;
+    margin: 5px 0;
+}
+form{
+    align-items: center;
+}
+#ID, #password{
+    padding: 10px 15px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px !important;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin: 10px 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+input::placeholder{
+    color: #9b9b9b;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px !important;
+    padding: 10px 0;
+    padding-left: 0;
+}
+.login-btn{
+    background-color: #0164E7BF;
+    border: none;
+    margin: 35px auto 20px;
+    padding: 7px 20px;
+    font: 16px "Roboto";
+    color: #ffffff;
+    text-align: center;
+    font-weight: 450;
+    border-radius: 10px;
+    
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-btn img{
+    width: 25px;
+    height: 25px;
+    padding-right: 5px;
+}
+.container p{
+    font: 16px "roboto", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    width: 100%;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #0000ff;
+    cursor: pointer;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#0164E7BF;
+    color: white;
+    text-align: center;
+    font: 16px "roboto", sans-serif;
+    font-weight: 500;
+    padding: 12px;
+    margin-bottom: 0;
+}
