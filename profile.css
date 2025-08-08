@@ -12,7 +12,7 @@ body{
     display: flex;
     background-color: #408bec;
     padding: 0px 12px;
-    margin-bottom: 4px;
+    /*margin-bottom: 4px;*/
 }
 .header img{
     width: 40px;
@@ -145,3 +145,4 @@ li img{
     position: relative;
     top: +10px;
 }
+
