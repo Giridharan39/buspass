@@ -84,12 +84,9 @@
             const info = userInfo[userNumber];
             document.getElementById("regno").innerHTML = `${userNumber}`;
             document.getElementById("user-name").innerHTML = ` ${info.name}`;
-            document.getElementById("location").innerHTML = ` ${info.location}`;
+            document.getElementById("location").innerHTML = `${info.location}`;
+            document.querySelector('img[alt="qrcode"]').src = `images/${userNumber}.png`;
         }
     </script>
-
-
 </body>
 </html>
-
-
