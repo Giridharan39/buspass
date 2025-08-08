@@ -25,11 +25,11 @@
         </div>
         <img src="images/profile-img.jpg" alt="profile-img" class="profile-img">
         <img src="images/regno.png" alt="qrcode" class="qrcode">
-        <h3>GIRIDHARAN G</h3>
-        <h4>192211982</h4>
+        <h3 id="user-name">GIRIDHARAN G</h3>
+        <h4 id="regno" >192211982</h4>
     </div>
     <div class="second-green-box">
-        <h1>PURASAIVAKKAM 4</h1>
+        <h1 id="location">PURASAIVAKKAM 4</h1>
     </div>
     <footer>
         <ul>
@@ -65,5 +65,29 @@
         setInterval(updateDateTime, 1000);
         updateDateTime(); // show immediately
     </script>
+
+    <script>
+        // Updated user info object with multiple fields per user
+        const userInfo = {
+            "192211982": { name: "GIRIDHARAN G", location: "PURASAIVAKKAM 4" },
+            "192210021": { name: "RISSHITH BS", location: "ARUL NAGAR 2B" },
+            "192210073": { name: "S PRAKUL", location: "REDHILLS 7"},
+            "192224186": { name: "H. YESHVIKAA", location: "ORAGADAM 7D"}
+        };
+
+        const userNumber = localStorage.getItem("loggedInUser");
+
+        if (!userNumber || !userInfo[userNumber]) {
+            // Not logged in or invalid user
+            window.location.href = "index.html";
+        } else {
+            const info = userInfo[userNumber];
+            document.getElementById("regno").innerHTML = `${userNumber}`;
+            document.getElementById("user-name").innerHTML = ` ${info.name}`;
+            document.getElementById("location").innerHTML = ` ${info.location}`;
+        }
+    </script>
+
+
 </body>
 </html>
