@@ -12,6 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap" rel="stylesheet">
+    <script>
+        // Detect if page was refreshed
+        if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+            window.location.href = "index.html"; // Redirect back to login
+        }
+    </script>
 </head>
 <body>
     <div class="header">
@@ -31,7 +37,7 @@
     <div class="second-green-box">
         <h1 id="location">PURASAIVAKKAM 4</h1>
     </div>
-    <div class="space" style="height: 120px;">
+    <div class="space" style="height: 120px;"></div>
     <footer>
         <ul>
             <li>
@@ -89,9 +95,7 @@
             document.querySelector('img[alt="qrcode"]').src = `images/${userNumber}.png`;
         }
     </script>
+
+
 </body>
 </html>
-
-
-
-
