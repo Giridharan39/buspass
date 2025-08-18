@@ -145,10 +145,12 @@ li img{
     position: relative;
     top: +10px;
 }
-.openbtn {
+.openbtn{
         font-size: 22px;
+        font-weight: 900;
+        margin-left: auto;
         cursor: pointer;
-        background: none;
+        background-color: #408bec;
         color: white;
         border: none;
         outline: none;
