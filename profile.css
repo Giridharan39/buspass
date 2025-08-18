@@ -146,8 +146,9 @@ li img{
     top: +10px;
 }
 .openbtn{
-        font-size: 22px;
-        font-weight: 900;
+        font-size: 25px;
+        font-weight: bolder;
+        overflow: hidden;
         margin-left: auto;
         cursor: pointer;
         background-color: #408bec;
@@ -155,4 +156,5 @@ li img{
         border: none;
         outline: none;
 }
+
 
